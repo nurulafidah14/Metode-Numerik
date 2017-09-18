@@ -18,7 +18,8 @@ void utama();
 int main(){
 	int a,b,pilih,hasil;
 
-   utama:                    
+   do{
+   //utama:             
    utama();
    printf("\n\n\t Masukkan Pilihan : "); scanf("%d", &pilih);
 	switch(pilih){
@@ -31,8 +32,9 @@ int main(){
 		printf("\n%d + %d = %d",a,b,hasil);
 
       getch();
+      break;
       system("cls");
-      goto utama;
+     // goto utama;
 
     case 2:
    	system("cls");
@@ -43,8 +45,9 @@ int main(){
 		printf("\n%d - %d = %d",a,b,hasil);
 
       getch();
-      system("cls");
-      goto utama;
+      break;
+      //system("cls");
+     // goto utama;
 
     case 3:
    	system("cls");
@@ -56,7 +59,8 @@ int main(){
 
       getch();
       system("cls");
-      goto utama;
+      break;
+      //goto utama;
 
     case 4:
    	system("cls");
@@ -67,7 +71,8 @@ int main(){
 
       getch();
       system("cls");
-      goto utama;
+     // goto utama;
+       break;
 
     case 5:
    	system("cls");
@@ -78,7 +83,8 @@ int main(){
 
       getch();
       system("cls");
-      goto utama;
+      //goto utama;
+      break;
 
     case 6:
     	system("cls");
@@ -90,15 +96,16 @@ int main(){
 
       getch();
       system("cls");
-      goto utama;
-
+      //goto utama;
+       break;
     }
+    }while(pilih!=6);
 }
 
 void utama(){
 	int pilih;
-
-	printf("--------------------SELAMAT DATANG--------------------");
+   system("cls");
+	printf("\n--------------------SELAMAT DATANG--------------------");
 	printf("\n-----------------TUGAS METODE NUMERIK-----------------");
 	printf("\t\n\n1. Tambah");
 	printf("\t\n2. Kurang");
